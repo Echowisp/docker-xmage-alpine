@@ -1,4 +1,6 @@
 # Based on anapsix/alpine-java+
+#XMage Version: 1.4.42v7
+
 FROM alpine:3.4
 
 # Java Version and other ENV
