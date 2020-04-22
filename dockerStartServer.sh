@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# update version
 XMAGE_CONFIG=/xmage/mage-server/config/config.xml
 
 sed -i -e "s#\(serverAddress=\)[\"].*[\"]#\1\"$XMAGE_DOCKER_SERVER_ADDRESS\"#g" ${XMAGE_CONFIG}
