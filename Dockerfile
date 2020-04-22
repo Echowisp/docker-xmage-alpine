@@ -1,4 +1,4 @@
-# Based on anapsix/alpine-java
+# Based on anapsix/alpine-java+
 FROM alpine:3.4
 
 # Java Version and other ENV
