@@ -80,7 +80,7 @@ RUN set -ex && \
 
 WORKDIR /xmage
 
-RUN curl --silent --show-error http://xmage.de/xmage/config.json | jq '.XMage.location' | xargs curl -# -L > xmage.zip \
+RUN echo http://xmage.today/files/mage-full_1.4.47.dev_2020-12-16_23-36.zip | xargs curl -# -L > xmage.zip \
  && unzip xmage.zip -x "mage-client*" \
  && rm xmage.zip \
  && apk del curl jq
