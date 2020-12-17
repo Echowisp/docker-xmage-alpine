@@ -1,5 +1,6 @@
 # Based on anapsix/alpine-java+
 #XMage Version: 1.4.42v7
+# Force Rebuild
 
 FROM alpine:3.4
 
