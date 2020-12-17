@@ -85,14 +85,16 @@ RUN echo http://xmage.today/files/mage-full_1.4.47.dev_2020-12-16_23-36.zip | xa
  && rm xmage.zip \
  && apk del curl jq
 
-COPY dockerStartServer.sh /xmage/mage-server/
+COPY dockerStartServer.sh /xmage/xmage/mage-server/
+
+RUN ls .
 
 RUN chmod +x \
-    /xmage/mage-server/startServer.sh \
-    /xmage/mage-server/dockerStartServer.sh
+    /xmage/xmage/mage-server/startServer.sh \
+    /xmage/xmage/mage-server/dockerStartServer.sh
 
 EXPOSE 17171 17179
 
-WORKDIR /xmage/mage-server
+WORKDIR /xmage/xmage/mage-server
 
 CMD [ "./dockerStartServer.sh" ]
