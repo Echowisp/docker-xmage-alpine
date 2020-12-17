@@ -1,4 +1,4 @@
-# XMage Server based on Alpine
+# XMage Server based on Alpine for Xmage Beta
 
 [![](https://images.microbadger.com/badges/image/goesta/xmage-alpine.svg)](https://microbadger.com/images/goesta/xmage-alpine)
 
@@ -8,7 +8,7 @@
         -p 17179:17179 \
         --add-host example.com:0.0.0.0 \
         -e "XMAGE_DOCKER_SERVER_ADDRESS=example.com" \
-        goesta/xmage-alpine
+        echowisp/xmage2
 
 
 XMage needs to know the domain name the server is running on. The `--add-host` option adds an entry to the containers `/etc/hosts` file for this domain. 
